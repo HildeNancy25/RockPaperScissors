@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 17%;
+    padding-left: 20%;
+    align-items: center;
+    width: 60%;
+}
+
+p{
+    font-size: 22px;
+}
+
+#moves{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 2px solid green; */
+    width: 50%;
+}
+#rock{
+    background-color: rgb(249, 107, 107);
+    font-size: 60px;
+    border: 0px;
+    cursor: pointer;
+
+}
+#paper{
+    background-color: rgb(110, 110, 253);
+    font-size: 60px;
+    border: 0px;
+    cursor: pointer;
+
+}
+#scissors{
+    background-color: rgb(87, 113, 87);
+    font-size: 60px;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+
+
