@@ -34,32 +34,40 @@ const getComputerChoice = () =>{
 };
 const rdm = getComputerChoice('scissors');
 
+let userWin = 0;
+let computerWin = 0;
 const determineWinner = (userChoice, computerChoice) =>{
     if (userChoice === computerChoice){
         document.getElementById("output").innerHTML = "no one scored.";
     }
     if (userChoice === paperEmo){
         if (computerChoice === 'rock'){
-            document.getElementById("output").innerHTML = "your score: 1  computer score: 0";
+            userWin++;
+            document.getElementById("output").innerHTML = "your score: "+ userWin + "  computer score: "+ computerWin ;
         } 
         else {
-            document.getElementById("output").innerHTML = "your score: 0  computer score: 1";
+            computerWin++;
+            document.getElementById("output").innerHTML = "your score: "+ userWin + "  computer score: "+ computerWin ;
         }
     }
 
     if (userChoice === rockEmo){
         if (computerChoice === 'scissors'){
-            document.getElementById("output").innerHTML = 'your score: 1  computer score: 0';
+            userWin++;
+            document.getElementById("output").innerHTML = "your score: "+ userWin + "  computer score: "+ computerWin ;
         } else {
-            document.getElementById("output").innerHTML = 'your score: 0  computer score: 1';
+            computerWin++;
+            document.getElementById("output").innerHTML = "your score: "+ userWin + "  computer score: "+ computerWin ;            
         }
     }
 
     if (userChoice === scissorsEmo){
         if (computerChoice === 'paper'){
-            document.getElementById("output").innerHTML = 'your score: 1  computer score: 0';
+            userWin++;
+            document.getElementById("output").innerHTML = "your score: "+ userWin + "  computer score: "+ computerWin ;
         } else {
-            document.getElementById("output").innerHTML = 'your score: 0  computer score: 1';
+            computerWin++;
+            document.getElementById("output").innerHTML = "your score: "+ userWin + "  computer score: "+ computerWin ;
         }
     } 
 }; 
